@@ -2,7 +2,6 @@ class Solution:
     def findRepeatedDnaSequences(self, s: str) -> List[str]:
         hash_set = set()
         res = set()
-
         for l in range(len(s)-9):
             cur = s[l:l+10]
             if cur in hash_set:
