@@ -8,7 +8,6 @@ class Solution:
         """
         self.dp = {}
         return self.dfs(price, special, needs)
-    
     def dfs(self, price, special, needs):
         if tuple(needs) in self.dp: # Memorization
             return self.dp[tuple(needs)]
